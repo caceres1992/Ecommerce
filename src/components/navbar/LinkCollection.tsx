@@ -64,7 +64,7 @@ const LinkCollection = () => {
                                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted  no-underline outline-none focus:shadow-md">
                                     <img
                                         className=' w-full object-cover h-full rounded-xl'
-
+                                            alt='image man'
                                         src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fae01.alicdn.com%2Fkf%2FHTB1iVcBaynrK1RjSsziq6xptpXaE%2F2019-Spring-White-Shoes-Men-Casual-Shoes-Male-Sneakers-Cool-Street-Men-Shoes-Brand-Man-Footwear.jpg&f=1&nofb=1&ipt=e4a6685fe0a5f0bc6c7597cb68a5c6b1ffbf4d78c3602867a4a2d88ef1abcec5&ipo=images'
                                     />
                                 </div>
@@ -94,7 +94,7 @@ const LinkCollection = () => {
                                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted  no-underline outline-none focus:shadow-md">
                                     <img
                                         className=' w-full object-cover h-full rounded-xl'
-
+                                            alt='image women'
                                         src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fae01.alicdn.com%2Fkf%2FHTB1OyXBm26H8KJjSspmq6z2WXXap%2FWomen-Casual-Shoes-Brown-Sneakers-for-Female-Lace-Up-Classic-Design-Black-Shoes-for-Students-Ins.jpg&f=1&nofb=1&ipt=996df451aaee89e0883023cc9153edacbe2910de4ab5a40c3657f447ae3adce6&ipo=images'
                                     />
                                 </div>
