@@ -3,7 +3,7 @@ import React from 'react'
 type Props = {
 }
 
-const Product = (props: Props) => {
+const Products = (props: Props) => {
     console.log(props)
   return (
     <div className=' min-h-screen border p-20 justify-center items-center flex'>
@@ -15,4 +15,4 @@ const Product = (props: Props) => {
   )
 }
 
-export default Product
+export default Products

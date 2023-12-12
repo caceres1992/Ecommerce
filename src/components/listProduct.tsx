@@ -1,11 +1,9 @@
 import React from 'react'
 import CardProduct from './cardProduct'
 import Footer from './Footer'
-import { headers } from 'next/headers';
-type Props = {}
 
-const ListProduct = async (props: Props) => {
-    console.log(process.env.URL_BASE)
+const ListProduct = async  () => {
+
     const urlBase = process.env.NODE_ENV === 'production'
         ? process.env.URL_BASE
         : "http://localhost:3000"
