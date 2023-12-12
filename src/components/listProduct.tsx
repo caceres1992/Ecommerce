@@ -16,7 +16,7 @@ const ListProduct = async (props: Props) => {
     return (
         <>
             <div className=' py-20 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 container gap-5'>
-                {products.map((product, idx) => {
+                {products?.map((product, idx) => {
                     return <CardProduct
                         key={product._id}
                         width={400} height={300}
