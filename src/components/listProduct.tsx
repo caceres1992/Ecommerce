@@ -10,8 +10,13 @@ const ListProduct = async (props: Props) => {
         ? process.env.URL_BASE
         : "http://localhost:3000"
 
-    const productData = await (await fetch(`${urlBase}/api/products`, { next: { revalidate: 5 } })).json()
-    const products: ICartItem[] = productData.products;
+    const productData = await fetch(`${urlBase}/api/products`, { next: { revalidate: 5 } })
+
+    if (!productData.ok) {
+        throw new Error('Failed to fetch data')
+    }
+    const parseProducts = await productData.json()
+    const products: ICartItem[] = parseProducts.products;
 
     return (
         <>
