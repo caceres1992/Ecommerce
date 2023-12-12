@@ -24,11 +24,11 @@ const Hero = (props: Props) => {
 
             <div className='max-w-2xl w-full text-center  md:text-left '>
 
-              <h1 className='  text-4xl lg:text-5xl  font-bold '>Are you looking for the better <span className=' text-rose-600'>run shoes?</span></h1>
-              <p className=' text-gray-400 pt-5'>We have the solution that you can achieve your goals.</p>
+              <h1 className='  text-4xl lg:text-5xl  font-bold '>{`Are you looking for the better `}<span className=' text-rose-600'>run shoes?</span></h1>
+              <p className=' text-gray-400 pt-5'>{`We have the solution that you can achieve your goals.`}</p>
               <Button className='  rounded-xl  space-x-2  mt-10'>
                 <Link href={'#listProduct'} className='flex items-center gap-2'>
-                  <span className=' font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600'>Let's do shopping</span>
+                  <span className=' font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600'>{`Let's do shopping`}</span>
                   <ShoppingBag className=' text-rose-600' />
                 </Link>
               </Button>
