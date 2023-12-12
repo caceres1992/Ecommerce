@@ -71,15 +71,15 @@ const LinkCollection = () => {
                             </li>
                             <ListItem href="/product?shoes='sport'" title="Sport">
 
-                                <p className=' text-gray-400 font-light'>Superior Comfort and Performance for Running and Workouts</p>
+                                <p className=' text-gray-400 font-light'>{`Superior Comfort and Performance for Running and Workouts`}</p>
                             </ListItem>
                             <ListItem href="/product?shoes='urban'" title="Urban">
-                                <p className=' text-gray-400 font-light'>Step into Urban Adventure with Style and Comfort!</p>
+                                <p className=' text-gray-400 font-light'>{`Step into Urban Adventure with Style and Comfort!`}</p>
 
 
                             </ListItem>
                             <ListItem href="/product?shoes='sandals'" title="Sandals">
-                                <p className=' text-gray-400 font-light'>Casual Coolness with Our Versatile Men's Sandals!</p>
+                                <p className=' text-gray-400 font-light'>{`Casual Coolness with Our Versatile Men's Sandals!`}</p>
                             </ListItem>
                         </ul>
                     </NavigationMenuContent>
@@ -102,15 +102,15 @@ const LinkCollection = () => {
                             </li>
                             <ListItem href="/docs" title="Sport">
 
-                                <p className=' text-gray-400 font-light'>Superior Comfort and Performance for Running and Workouts</p>
+                                <p className=' text-gray-400 font-light'>{`Superior Comfort and Performance for Running and Workouts`}</p>
                             </ListItem>
                             <ListItem href="/docs/installation" title="Urban">
-                                <p className=' text-gray-400 font-light'>Step into Urban Adventure with Style and Comfort!</p>
+                                <p className=' text-gray-400 font-light'>{`Step into Urban Adventure with Style and Comfort!`}</p>
 
 
                             </ListItem>
                             <ListItem href="/docs/primitives/typography" title="Sandals">
-                                <p className=' text-gray-400 font-light'>Casual Coolness with Our Versatile Men's Sandals!</p>
+                                <p className=' text-gray-400 font-light'>{`Casual Coolness with Our Versatile Women's Sandals!`}</p>
                             </ListItem>
                         </ul>
                     </NavigationMenuContent>
@@ -118,7 +118,7 @@ const LinkCollection = () => {
                 <NavigationMenuItem>
                     <Link
                         className='font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600' href={'CLEAREANCE'}>
-                        Cleareance
+                        Clearance
                     </Link>
                 </NavigationMenuItem>
             </NavigationMenuList>
