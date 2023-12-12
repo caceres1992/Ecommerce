@@ -5,6 +5,7 @@ import UserCard from './userCard'
 import DarkMode from '../darkMode'
 import { MenuIcon, ShoppingBag } from 'lucide-react'
 import { Button } from '../ui/button'
+import CartShop from '../cartShop'
 
 type Props = {}
 
@@ -27,9 +28,8 @@ const Navbar = (props: Props) => {
                     <UserCard title='JASSON' href='https://github.com/shadcn.png' />
                 </div>
 
-                <Button className='  rounded-xl  space-x-2'>
-                    <ShoppingBag className=' ' />
-                </Button>
+                    <CartShop />
+              
             </div>
         </header>
     )

@@ -1,14 +1,22 @@
+'use client'
 import React from 'react'
 import { Button } from './ui/button'
 import { ShoppingBag } from 'lucide-react'
 import Link from 'next/link'
-
+import {motion} from 'framer-motion'
 type Props = {}
 
 const Hero = (props: Props) => {
   return (
-    <div className=' min-h-screen py-20  flex justify-center items-center '>
-      <div className=' container rounded-lg  h-[560px] w-full'>
+    <motion.div 
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{
+      duration:.2
+    }}
+    className=' min-h-screen py-20 mx-auto flex justify-center items-center overflow-hidden '>
+      <div
+      className=' container rounded-lg  h-[560px] w-full   overflow-hidden'>
         <div
           style={{ backgroundImage: 'url(/assets/__shoes_running.png)', backgroundPositionX: '-20%' }}
           className='bg-gradient-to-tr p-5 flex justify-center items-center bg-no-repeat bg-left bg-gray-950 h-full  overflow-hidden  rounded-xl w-full'>
@@ -28,7 +36,7 @@ const Hero = (props: Props) => {
 
             <div className=' relative'>
               <img className=' relative z-10  h-52 object-contain w-full ' src='/assets/__shoes__running.png' />
-              <div className=' absolute   top-0 md:-top-10 -right-52 h-52 md:h-80 w-[500px]  shadow-lg shadow-rose-900/40 bg-gradient-to-br from-rose-900   rounded-l-full'>
+              <div className=' absolute   top-0 md:-top-10 -right-52 h-52 md:h-80 w-[500px]  shadow-lg shadow-inner shadow-rose-900/40 bg-[#000]  rounded-l-full'>
               </div>
             </div>
 
@@ -37,7 +45,7 @@ const Hero = (props: Props) => {
         </div>
 
       </div>
-    </div>
+    </motion.div>
   )
 }
 

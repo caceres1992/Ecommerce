@@ -4,27 +4,29 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --destructive:0 66% 43%;
+  --destructive: 0 66% 43%;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary: 235 100 63;
+  --secondary:  207 89 55;
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --destructive:0 66% 43%;
+    --destructive: 0 66% 43%;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
-      --card:0 0% 100%;
+    --card: 0 0% 100%;
+    --primary: 235 100 63;
+    --secondary:  207 89 55;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }

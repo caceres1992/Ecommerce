@@ -7,14 +7,16 @@ import { Heart } from 'lucide-react'
 type Props = {
     src: string,
     alt: string,
+    name:string,
+    price: number,
     blurDataUrl: string,
     sizes?: string,
     width: Number,
     height: Number,
-    description: string
+    description?: string
 }
 
-const CardProduct = ({ src }: Props) => {
+const CardProduct = ({ name,src,price }: Props) => {
     return (
         <Card className='  cursor-pointer rounded-xl overflow-hidden group relative  bg-gray-900 border-none'>
             <CardHeader className=' '>
@@ -22,7 +24,7 @@ const CardProduct = ({ src }: Props) => {
                     objectFit={'cover'}
                     className='  rounded-t-2xl shadow-md overflow-hidden'
                     src={src}
-                    blurDataURL={'/assets/__image1.png'}
+                    blurDataURL={src}
                     width={600} height={200}
                     placeholder={'blur'}
                     quality={75}
@@ -33,10 +35,10 @@ const CardProduct = ({ src }: Props) => {
             </CardHeader>
             <CardContent>
 
-                <CardTitle >
-                    Green Military Urban
+                <CardTitle  className=' capitalize'>
+                  {name}
                 </CardTitle>
-                <CardDescription className=' flex justify-between mt-4 text-base'>Price  <strong className=' text-xl textblu'>USD 450</strong> </CardDescription>
+                <CardDescription className=' flex justify-between mt-4 text-base'>Price  <strong className=' text-lg'>$ {price.toFixed(2)}</strong> </CardDescription>
             </CardContent>
             <CardFooter className=' absolute -top-full  left-2.5   transition-all   group-hover:top-8  '>
                 <Button className=' bg-gradient-to-t  h-12 w-12 from-rose-700 to-orange-600 hover:from-orange-600 opacity-0 group-hover:opacity-100  group-hover:delay-100 hover:to-rose-700  transition-all ease-in-out rounded-full ' variant={'secondary'}>
