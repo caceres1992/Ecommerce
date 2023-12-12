@@ -9,10 +9,9 @@ const ListProduct = async (props: Props) => {
     const urlBase = process.env.NODE_ENV === 'production'
         ? process.env.URL_BASE
         : "http://localhost:3000"
-        
+
     const productData = await (await fetch(`${urlBase}/api/products`, { next: { revalidate: 5 } })).json()
     const products: ICartItem[] = productData.products;
-    console.log()
 
     return (
         <>
